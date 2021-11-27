@@ -1,0 +1,36 @@
+* { 
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  background-color: #dfe1ee;
+}
+
+
+ .buddy-sign-form{
+  width:100%;
+  max-width:400px;
+  background-color:#f9f9f9;
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:16px;
+  margin:0 auto;
+  margin-bottom: 3rem;
+}
+
+.error{
+  color: red !important;
+  text-align: center;
+}
+
+.success-msg{
+  color: green !important;
+  text-align: center;
+}

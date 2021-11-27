@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^settings/?$ setting.php
+RewriteRule ^account/?$ account.php
+RewriteRule ^changepassword/?$ changepassword.php
+RewriteRule ^closeaccount/?$ closeaccount.php
+RewriteRule ^profile/?$ profile.php

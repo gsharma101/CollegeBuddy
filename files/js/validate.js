@@ -1,0 +1,26 @@
+$(document).ready(function(){  
+    $('#buddy-form').parsley();
+    $('#buddy-form').on('submit',function(event){
+        event.preventDefault();
+        if($('#buddy-form').parsley().isValid())
+        {
+           $.ajax({
+            url:"../php/action.php",
+            method:"POST",
+            data:$(this).serialize(),
+            beforeSend:function(){
+             $('#submit').attr('disabled','disabled');
+             $('#submit').val('Submitting...');
+            },
+            success:function(data)
+            {
+            $('#buddy-form')[0].reset();
+            $('#buddy-form').parsley().reset();
+            $('#submit').attr('disabled',false);
+            $('#submit').val('Submit');
+            alert(data);
+            }
+        });
+       }
+    });
+});  
