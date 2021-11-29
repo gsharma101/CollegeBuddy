@@ -10,6 +10,7 @@ if ($getFromU->loggedIn() === false) {
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Ptu Buddy</title>
     <?php include_once("includes/backHeader.php"); ?>
@@ -26,17 +27,22 @@ if ($getFromU->loggedIn() === false) {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <div class="h5"><a href="profile"><?php echo ucfirst($user->fname) . " " . ucfirst($user->lname); ?></a></div>
-                        <img class="card-img-top" style="width:150px;" src="<?php echo $user->profile_image; ?>" alt="Card image">
+                        <div class="h5"><a
+                                href="profile"><?php echo ucfirst($user->fname) . " " . ucfirst($user->lname); ?></a>
+                        </div>
+                        <img class="card-img-top" style="width:150px;" src="<?php echo $user->profile_image; ?>"
+                            alt="Card image">
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div class="h6 text-muted">General Information</div>
-                            <div class="h5 text-uppercase"><?php echo strtoupper($user->branch) . " " . $user->sem; ?> Semester</div>
+                            <div class="h5 text-uppercase"><?php echo strtoupper($user->branch) . " " . $user->sem; ?>
+                                Semester</div>
                             <div class="h5 text-uppercase text-muted"><?php echo $user->uni_roll; ?></div>
                         </li>
                         <li class="list-group-item bg-dark text-white text-center">
-                            <a class="text-white" href="https://www.facebook.com/ptubuddy/" target="_blank"><i class="fa fa-facebook"></i>&nbsp;facebook</a>&nbsp;
+                            <a class="text-white" href="https://www.facebook.com/ptubuddy/" target="_blank"><i
+                                    class="fa fa-facebook"></i>&nbsp;facebook</a>&nbsp;
                             <a><i class="fa fa-whatsapp"></i>&nbsp;whatsapp</a>
                             <a></a>
                         </li>
@@ -48,7 +54,8 @@ if ($getFromU->loggedIn() === false) {
                     </div>
                     <div class="card-body text-center">
                         <ul class="list-group">
-                            <button type="button" data-toggle="modal" data-target="#studentsNotes" class="list-group-item bg-primary text-uppercase text-white">notes</button>
+                            <button type="button" data-toggle="modal" data-target="#studentsNotes"
+                                class="list-group-item bg-primary text-uppercase text-white">notes</button>
                         </ul>
                     </div>
                 </div><br>
@@ -60,7 +67,8 @@ if ($getFromU->loggedIn() === false) {
                             <h4 class="text-uppercase text-center">quote of the day</h4>
                         </div>
                         <div class="card-body">
-                            <p class="text-center" style="font-size: 20px; font-weight: bold; font-family:buddy_quote;"><?php echo $quote->quote; ?></p>
+                            <p class="text-center" style="font-size: 20px; font-weight: bold; font-family:buddy_quote;">
+                                <?php echo $quote->quote; ?></p>
                         </div>
                     </div>
                 </div><br>
@@ -101,11 +109,11 @@ if ($getFromU->loggedIn() === false) {
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">Important</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Holidays</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo ac
+                            lectus suscipit iaculis. </p>
                         <a href="#" class="card-link">Read Full</a>
                     </div>
-                </div><br>
+                </div>
             </div>
         </div>
         <div class="modal" id="studentsNotes">
@@ -114,7 +122,8 @@ if ($getFromU->loggedIn() === false) {
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title text-uppercase badge badge-warning"><?php echo strtoupper($user->branch) . " " . $user->sem; ?> semester notes</h4>
+                        <h4 class="modal-title text-uppercase badge badge-warning">
+                            <?php echo strtoupper($user->branch) . " " . $user->sem; ?> semester notes</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 

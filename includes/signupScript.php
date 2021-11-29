@@ -46,6 +46,7 @@ if(isset($_POST['login'])){
 
            if($getFromU->VerifiEmail($email,$uni_roll,$hashedToken,$selector,$expires) === true){
 			 $getFromU->SendEmail($email,$url);
+			 mkdir("../students/$uni_roll");
            	 header("Location: verifi.php");
            	 exit();
            }else{

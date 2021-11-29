@@ -28,16 +28,6 @@ if(isset($_SESSION['adminid'])){
              </div>
           </div>
     </div>
-    <div class="col-md-4 mb-5 buddy-card">
-       <div style="width: 100%;" class="card bg-success text-white" style="max-width:250px;">
-             <div class="card-header">
-               <h6 class="text-uppercase text-center"><a class="text-white" href="#">online</a></h6>
-             </div>
-             <div class="card-body">
-               <h1 class="text-uppercase text-center">2000</h1>
-             </div>
-          </div>
-    </div>
     <div class="col-md-4 buddy-card">
           <div style="width: 100%;" class="card bg-dark text-white" style="max-width:250px;">
              <div class="card-header bg-dark text-white">

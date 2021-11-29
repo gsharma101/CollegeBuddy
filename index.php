@@ -5,7 +5,7 @@ include_once("includes/loginScript.php");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ptu BuddY</title>
+    <title>Campus Ecosystem</title>
     <?php include_once("includes/frontHeader.php");?>
 </head>
 <body>
@@ -14,7 +14,7 @@ include_once("includes/loginScript.php");
         <div class="card mx-auto shadow" style="max-width: 400px; margin-top: 6rem;
     margin-bottom: 8rem;">
             <div class="card-header bg-dark text-white">
-                <h4 style="text-align: center; font-family: lato; font-weight: bold;">Welcome to PTU BuddY</h4>
+                <h4 style="text-align: center; font-family: lato; font-weight: bold;">Welcome to Campus Ecosystem</h4>
                 <p class="text-center">login to continue with ptubuddy</p>
                 <?php
                 if (isset($error)) {

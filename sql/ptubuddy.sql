@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2021 at 06:30 PM
+-- Generation Time: Nov 29, 2021 at 01:59 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -80,7 +80,7 @@ CREATE TABLE `buddy_quote` (
 --
 
 INSERT INTO `buddy_quote` (`quote`) VALUES
-('Enjoy The Process');
+('Keep it up');
 
 -- --------------------------------------------------------
 
@@ -94,15 +94,16 @@ CREATE TABLE `buddy_teachers` (
   `lname` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phoneNumber` varchar(15) NOT NULL,
-  `Tpassword` varchar(255) NOT NULL
+  `Tpassword` varchar(255) NOT NULL,
+  `Tprofile` varchar(255) NOT NULL DEFAULT '../assets/images/dp.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `buddy_teachers`
 --
 
-INSERT INTO `buddy_teachers` (`teacher_id`, `fname`, `lname`, `email`, `phoneNumber`, `Tpassword`) VALUES
-(1, 'gaurav', 'sharma', 'sharmag8121@gmail.com', '9882884643', '$2y$10$K4Xs4t/hAqMuDUaun1I8ouPurvPHZP.YlbQImNFFhDdmpcfMPAnpC');
+INSERT INTO `buddy_teachers` (`teacher_id`, `fname`, `lname`, `email`, `phoneNumber`, `Tpassword`, `Tprofile`) VALUES
+(1, 'gaurav', 'sharma', 'sharmag8121@gmail.com', '9882884643', '$2y$10$K4Xs4t/hAqMuDUaun1I8ouPurvPHZP.YlbQImNFFhDdmpcfMPAnpC', '../assets/images/dp.png');
 
 -- --------------------------------------------------------
 
@@ -123,7 +124,7 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`comment_id`, `comment_by`, `comment_on`, `comment_body`, `comment_at`) VALUES
-(2, 1, 2, 'greater post buddy', '0000-00-00 00:00:00');
+(3, 1, 2, 'i like it', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -136,13 +137,6 @@ CREATE TABLE `likes` (
   `likeCount` int(11) NOT NULL,
   `like_on` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `likes`
---
-
-INSERT INTO `likes` (`like_by`, `likeCount`, `like_on`) VALUES
-(1, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -158,13 +152,6 @@ CREATE TABLE `posts` (
   `posted_on` datetime NOT NULL,
   `likeCount` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`post_id`, `posted_by`, `name`, `body`, `posted_on`, `likeCount`) VALUES
-(2, 1, 'Admin', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet, erat at viverra mollis, urna ante interdum diam, eu condimentum augue lectus eu purus. Vivamus quis sapien et tellus eleifend mollis. Pellentesque ullamcorper sodales rutrum. In non l', '0000-00-00 00:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -261,7 +248,7 @@ ALTER TABLE `buddy_teachers`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `posts`

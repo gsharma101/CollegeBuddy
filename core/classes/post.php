@@ -68,7 +68,7 @@ class Post extends User
 
     public function addlike($user_id, $postid, $getid)
     {
-        $query = "UPDATE posts SET likeCount = likeCount +1 WHERE post_id=:post_id";
+        $query = "UPDATE posts SET  11111 = likeCount +1 WHERE post_id=:post_id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':post_id', $postid, PDO::PARAM_INT);
         $stmt->execute();

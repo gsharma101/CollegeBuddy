@@ -87,9 +87,9 @@ if ($getFromU->loggedIn() === false) {
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form method="post" action="#" enctype="multipart/form-data">
+          <form method="post" action="includes/upload.php" enctype="multipart/form-data">
             <div class="form-group">
-              <input type="file" name="profile_image" placeholder="Upload Profile">
+              <input type="file" name="file" placeholder="Upload Profile">
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Upload Profile</button>
