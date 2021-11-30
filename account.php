@@ -11,7 +11,7 @@ if ($getFromU->loggedIn() === false) {
 <html>
 
 <head>
-  <title>Ptu Buddy - Settings</title>
+  <title>Campus Ecosystem - Settings</title>
   <?php include_once("includes/backHeader.php"); ?>
   <style>
     .padding-0 {

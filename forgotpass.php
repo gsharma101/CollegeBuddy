@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PTU BuddY</title>
+	<title>Campus Ecosystem</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <!-- Latest compiled and minified CSS -->
@@ -23,7 +23,7 @@
     <header>
         <div class="container-fluid">
             <div class="jumbotron">
-                <h1 style="text-transform: uppercase; text-align: center; font-family: lato;">Welcome to PTU BuddY</h1>
+                <h1 style="text-transform: uppercase; text-align: center; font-family: lato;">Welcome to Campus Ecosystem</h1>
             </div>
         </div>
     </header>

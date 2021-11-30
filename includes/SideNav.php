@@ -1,7 +1,7 @@
 <?php
 echo '<div id="mySidenav" class="sidenav bg-dark">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="assets/images/dp.png" style="width: 40%; margin-left: 18px; border-radius: 50%;">
+        <img src="'.$user->profile_image.'" style="width: 40%; margin-left: 18px; border-radius: 50%;">
         <a href="home.php"><i class="fas fa-home"></i>&nbsp;Home</a>
         <a href="profile"><i class="fas fa-user"></i>&nbsp;Profile</a>
         <a href="settings"><i class="fas fa-tools"></i>&nbsp;Settings</a>

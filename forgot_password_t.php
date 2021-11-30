@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Ptu BuddY</title>
+    <title>Campus Ecosystem</title>
     <?php include_once("includes/frontHeader.php"); ?>
 </head>
 

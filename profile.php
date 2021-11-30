@@ -87,17 +87,20 @@ if ($getFromU->loggedIn() === false) {
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form method="post" action="includes/upload.php" enctype="multipart/form-data">
+          <form action="includes/upload.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
               <input type="file" name="file" placeholder="Upload Profile">
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary">Upload Profile</button>
+              <button type="submit" name="submit" class="btn btn-primary">Upload Profile</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <?php
+    include_once('includes/footer.php');
+    ?>
   </div>
 </body>
 <script src="https://kit.fontawesome.com/1b8b2eefd1.js" crossorigin="anonymous"></script>

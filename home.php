@@ -12,7 +12,7 @@ if ($getFromU->loggedIn() === false) {
 <html>
 
 <head>
-    <title>Ptu Buddy</title>
+    <title>Campus Ecosystem</title>
     <?php include_once("includes/backHeader.php"); ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css">
     <script src="https://kit.fontawesome.com/1b8b2eefd1.js" crossorigin="anonymous"></script>
@@ -150,7 +150,7 @@ if ($getFromU->loggedIn() === false) {
             </div>
         </div>
     </div>
-    </div>
+</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"></script>
 

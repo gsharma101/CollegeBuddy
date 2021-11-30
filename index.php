@@ -15,7 +15,7 @@ include_once("includes/loginScript.php");
     margin-bottom: 8rem;">
             <div class="card-header bg-dark text-white">
                 <h4 style="text-align: center; font-family: lato; font-weight: bold;">Welcome to Campus Ecosystem</h4>
-                <p class="text-center">login to continue with ptubuddy</p>
+                <p class="text-center">login to continue </p>
                 <?php
                 if (isset($error)) {
                     echo '<h6 class="text-danger text-center">'.$error.'</h6>';

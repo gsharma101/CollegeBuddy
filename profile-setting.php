@@ -36,7 +36,7 @@ session_start();
 <section>
     <nav>
         <ul class="buddy-hed-li">
-            <li><a href="profile.php">PTU BuddY</a></li>
+            <li><a href="profile.php">Campus Ecosystem</a></li>
             <li>
                 <form method="POST" action="#" >
                     <input class="buddy-search" type="text" name="Search" placeholder="Search">
